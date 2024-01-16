@@ -1,0 +1,15 @@
+if SHIELD_MY_BOARD
+
+config ZMK_KEYBOARD_NAME
+    default "Beamboard"
+
+config SPI
+    default y
+
+config GPIO
+    default y
+
+config PINCTRL
+    default y
+
+endif
