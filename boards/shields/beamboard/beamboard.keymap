@@ -36,7 +36,6 @@
                 &kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp PERIOD  &kp SLASH       &kp RSHFT                       &kp UP    &kp BT_SEL 1 &kp BT_SEL 2 &kp BT_SEL 3
                 &kp LCTRL   &kp LGUI    &kp LALT    &kp E            &kp SPACE               &kp SPACE          &kp R       &kp RALT    &kp K_CMENU &kp M       &kp RCTRL   &kp LEFT    &kp DOWN    &kp RIGHT  &kp BT_SEL 0 &kp PERIOD
             >;
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
 
