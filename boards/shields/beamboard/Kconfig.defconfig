@@ -1,7 +1,7 @@
-if SHIELD_MY_BOARD
+if SHIELD_BEAMBOARD
 
 config ZMK_KEYBOARD_NAME
-    default "Beamboard"
+    default "beamboard"
 
 config SPI
     default y
