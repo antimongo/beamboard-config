@@ -1,8 +1,0 @@
-file_format: "1"
-id: beamboard
-name: beamboard
-type: shield
-requires: [nice_nano_v2]
-features:
-  - keys
-  - encoder
