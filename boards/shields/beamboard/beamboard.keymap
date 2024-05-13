@@ -26,7 +26,13 @@
                 &kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp PERIOD  &kp SLASH       &kp RSHFT                       &kp UP      &kp N1      &kp N2      &kp N3
                 &kp LCTRL   &kp LGUI    &kp LALT    &kp E            &kp SPACE               &kp SPACE          &kp RALT    &kp K_CMENU &mo BLT    &kp M       &kp RCTRL   &kp LEFT    &kp DOWN    &kp RIGHT   &kp N0      &kp PERIOD
             >;
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
+            /*
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            C_AC_SCROLL_UP
+            sensor-bindings = <&inc_dec_mwh SCROLL_DOWN SCROLL_UP>;
+            &inc_dec_mwh SCROLL_RIGHT SCROLL_LEFT>;
+            */
         };
 
         bluetooth_layer {
@@ -38,6 +44,11 @@
                 &kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp PERIOD  &kp SLASH       &kp RSHFT                       &kp UP    &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
                 &kp LCTRL   &kp LGUI    &kp LALT    &kp E            &kp SPACE               &kp SPACE          &kp RALT    &kp K_CMENU &mo BLT     &kp M       &kp RCTRL   &kp LEFT    &kp DOWN    &kp RIGHT  &bt BT_SEL 0 &kp PERIOD
             >;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            /*
+            sensor-bindings = <&inc_dec_kp &none &none>;
+            sensor-bindings = <&inc_dec_mwh SCROLL_DOWN SCROLL_UP>;
+            */
         };
 
 
