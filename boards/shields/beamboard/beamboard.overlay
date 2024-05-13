@@ -72,14 +72,6 @@ nice_view_spi: &spi0 {
     };
 };
 
-encoder: &qdec0 {
-    status = "okay";
-    led-pre = <0>;
-    steps = <80>;
-    pinctrl-0 = <&qdec_default>;
-    pinctrl-names = "default";
-};
-
 / {
     chosen {
         zmk,kscan = &kscan0;
