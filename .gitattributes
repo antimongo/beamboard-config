@@ -1,0 +1,7 @@
+*.defconfig linguist-language=Kconfig
+*.shield linguist-language=Kconfig
+*.conf linguist-language=Config
+
+*.dtsi linguist-language=C
+*.keymap linguist-language=C
+*.overlay linguist-language=C
