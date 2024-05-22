@@ -78,7 +78,6 @@ nice_view_spi: &spi0 {
         zmk,matrix_transform = &default_transform;
     };
 
-
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <9>;
@@ -92,8 +91,6 @@ nice_view_spi: &spi0 {
         RC(5,0)   RC(5,1)   RC(5,2)   RC(5,3)       RC(5,4)             RC(5,6)         RC(11,0)  RC(11,1)  RC(11,2)  RC(11,3)  RC(11,4)  RC(11,5)  RC(11,6)  RC(11,7)  RC(11,8)  RC(10,5)
         >;
     };
-
-
 
     kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-matrix";
@@ -131,46 +128,12 @@ nice_view_spi: &spi0 {
             , <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // 11
             ;
     };
-    /*
-    encoder_kscan: kscan_1 {
-		compatible = "zmk,kscan-gpio-direct";
-		// debounce-period = <50>;
-		input-gpios = <&pca_io 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-	};
-    */
 };
 
 
 
-/*
-encoder: &qdec0 {
-	status = "okay";
-	led-pre = <0>;
-	steps = <80>;
-	pinctrl-0 = <&qdec_default>;
-	pinctrl-names = "default";
-};
-*/
 /*
 &nice_view_spi {
     cs-gpios = <&pca_io 3 GPIO_ACTIVE_HIGH>; // CS PCA P3
 }
-*/
-/*
-&i2c0 {
-	status = "okay";
-	clock-frequency = <I2C_BITRATE_FAST>;
-
-    pca_io: pca9538@20 {
-        compatible = "nxp,pca95xx";
-        status = "okay";
-        reg = <0x20>;
-        label = "PCA_IO";
-
-        gpio-controller;
-        #gpio-cells = <2>;
-        ngpios = <8>;
-
-    };
-};
 */

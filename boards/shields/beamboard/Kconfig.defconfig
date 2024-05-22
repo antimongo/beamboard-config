@@ -12,4 +12,7 @@ config GPIO
 config PINCTRL
     default y
 
+config ZMK_EXT_POWER
+    default y
+
 endif
