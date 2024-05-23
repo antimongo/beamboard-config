@@ -15,4 +15,14 @@ config PINCTRL
 config ZMK_EXT_POWER
     default y
 
+if ZMK_BACKLIGHT
+
+config PWM
+    default y
+
+config LED_PWM
+    default y
+
+endif # ZMK_BACKLIGHT
+
 endif
