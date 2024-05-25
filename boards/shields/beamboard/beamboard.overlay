@@ -31,6 +31,7 @@
 
 };
 
+/*
 &nice_view_spi {
     compatible = "nordic,nrf-spim";
     cs-gpios = <&gpio1 7 GPIO_ACTIVE_HIGH>;
@@ -39,6 +40,7 @@
     pinctrl-names = "default", "sleep";
     label = "nice_view_spi";
 };
+*/
 
 &default_encoder {
     status = "okay";
