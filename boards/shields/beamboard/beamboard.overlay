@@ -28,19 +28,18 @@
         ngpios = <8>;
     };
 
-
+    nice_view_spi: nice_view_spi@0 {
+        compatible = "ssd1306";
+        reg = <0>;
+        label = "NICE_VIEW_SPI";
+        spi-max-frequency = <8000000>;
+        cs-gpios = <&pro_micro 7 GPIO_ACTIVE_LOW>;
+        spi-cpol;
+        spi-cpha;
+        width = <128>;
+        height = <64>;
+    };
 };
-
-/*
-&nice_view_spi {
-    compatible = "nordic,nrf-spim";
-    cs-gpios = <&gpio1 7 GPIO_ACTIVE_HIGH>;
-    pinctrl-0 = <&spi0_default>;
-    pinctrl-1 = <&spi0_sleep>;
-    pinctrl-names = "default", "sleep";
-    label = "nice_view_spi";
-};
-*/
 
 &default_encoder {
     status = "okay";
@@ -131,10 +130,3 @@
     };
 };
 
-
-
-/*
-&nice_view_spi {
-    cs-gpios = <&pca_io 3 GPIO_ACTIVE_HIGH>; // CS PCA P3
-}
-*/
