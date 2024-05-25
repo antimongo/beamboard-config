@@ -3,8 +3,6 @@ id: beamboard
 name: beamboard
 type: shield
 requires: [nice_nano_v2]
-exposes: [i2c_oled]
 features:
   - keys
-  - display
   - encoder
