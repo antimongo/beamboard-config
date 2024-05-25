@@ -19,5 +19,4 @@
 ---
 include:
   - board: nice_nano_v2
-    #- board: nice_nano_v2 nice_view
-    shield: beamboard
+    shield: beamboard nice_view
