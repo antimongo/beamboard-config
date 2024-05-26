@@ -15,4 +15,14 @@ config PINCTRL
 config ZMK_EXT_POWER
     default y
 
+config ZMK_DISPLAY
+    select LV_FONT_MONTSERRAT_28
+
+if ZMK_DISPLAY
+
+config LS0XX
+    default y
+
+endif # ZMK_DISPLAY
+
 endif
