@@ -13,9 +13,11 @@
 #define BLT 1
 #define MEDIA 2
 
+/*
 &sl {
     release-after-ms = <1>;
 };
+*/
 
 / {
     macros {
@@ -23,8 +25,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp K_CANCEL>
-                , <&to MEDIA>
+                = <&macro_tap &kp K_CANCEL>
+                , <&tog MEDIA>
                 ;
         };
     };
