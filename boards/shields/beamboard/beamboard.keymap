@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/ext_power.h>
 
 #define DEFAULT 0
 #define BLT 1
@@ -80,12 +81,12 @@
 
         bluetooth_layer {
             bindings = <
-                &trans      &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans   
+                &trans      &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans            &trans      &trans      &trans      &ext_power EP_TOG   
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans     &trans    &bt BT_CLR  &out OUT_USB &out OUT_BLE
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans     &trans    &trans      &trans       &trans   
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans          &trans             &trans    &bt BT_SEL 3 &bt BT_SEL 4 &trans   
-                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans          &trans                         &trans    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2
-                &trans      &trans      &trans      &trans           &trans                  &trans             &trans      &trans      &trans      &trans      &trans      &trans     &trans    &trans      &trans       &trans
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans  &ext_power EP_TOG   &trans                         &trans    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2
+                &trans      &trans      &trans      &trans           &trans                  &trans             &trans      &trans      &none       &trans      &trans      &trans     &trans    &trans      &trans       &trans
             >;
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
