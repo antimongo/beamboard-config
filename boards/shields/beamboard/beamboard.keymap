@@ -20,6 +20,10 @@
 };
 */
 
+&soft_off {
+    hold-time-ms = <1000>; // Turn off keyboard after holding for 1s
+};
+
 / {
     macros {
         lock_media: lock_media {
@@ -81,11 +85,11 @@
 
         bluetooth_layer {
             bindings = <
-                &trans      &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans            &trans      &trans      &trans      &ext_power EP_TOG   
+                &trans      &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans     &trans    &bt BT_CLR  &out OUT_USB &out OUT_BLE
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans     &trans    &trans      &trans       &trans   
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans          &trans             &trans    &bt BT_SEL 3 &bt BT_SEL 4 &trans   
-                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans  &ext_power EP_TOG   &trans                         &trans    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &soft_off       &trans                         &trans    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2
                 &trans      &trans      &trans      &trans           &trans                  &trans             &trans      &trans      &none       &trans      &trans      &trans     &trans    &trans      &trans       &trans
             >;
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
