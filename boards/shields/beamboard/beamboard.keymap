@@ -15,14 +15,11 @@
 #define BLT 2
 #define MEDIA 3
 
-/*
 &sl {
-    release-after-ms = <1>;
+    release-after-ms = <333>; // After key release, hold for 333ms
 };
-*/
 
 &soft_off {
-    // hold-time-ms = <1000>; // Turn off keyboard after holding for 1s
     hold-time-ms = <1>; // Turn off keyboard after holding for 1ms
 };
 
@@ -55,7 +52,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp ENTER>, <&kp PERIOD>;
         };
-        
+
         // Used for Ctrl/CAPS button
         tdCtrlCAP: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
@@ -107,7 +104,7 @@
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans     &trans    &trans      &trans       &trans   
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans          &trans             &trans    &bt BT_SEL 3 &bt BT_SEL 4 &trans   
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans          &trans                         &trans    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2
-                &trans      &trans      &trans      &trans           &trans                  &trans             &trans      &trans      &none       &trans      &trans      &trans     &trans    &trans      &trans       &trans
+                &trans      &trans      &trans      &trans           &trans                  &trans             &trans      &trans      &none       &trans      &trans      &bt BT_PRV &trans    &bt BT_NXT  &trans       &trans
             >;
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };

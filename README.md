@@ -1,6 +1,6 @@
 # Beamboard
 
-The Beamboard is a custom mechanical keyboard designed for those who crave an ortholinear, TKL (tenkeyless), wireless, low-profile typing experience with Choc switches and unique integrated features.
+The Beamboard is a custom mechanical keyboard designed for those who crave an ortholinear, compact, wireless, low-profile typing experience with Kailh Choc switches and unique integrated features.
 
 ## Inspiration
 
@@ -8,9 +8,9 @@ The Beamboard was born out of a desire to merge sought-after keyboard features i
 
 ## Key Features
 
-- **Bluetooth or Wired Operation**: Seamlessly switch between wireless Bluetooth or wired operation with the Nice!Nano microcontroller.
-- **Integrated Display**: A low-power Nice!View ePaper display offers at-a-glance keyboard information for improved usability.
-- **Integrated Encoder**: Effortlessly scroll with the horizonal Panasonic EVQWGD001 encoder, no need to reach for the mouse.
+- **Bluetooth or Wired Operation**: Seamlessly switch between wireless Bluetooth or wired operation with the nice!nano microcontroller.
+- **Integrated Display**: A low-power nice!view ePaper display offers at-a-glance keyboard information for improved usability.
+- **Integrated Encoder**: Effortlessly scroll or change volume with the horizonal Panasonic EVQWGD001 encoder, no need to reach for the mouse.
 - **Ortholinear Layout**: Typing comfort is enhanced with reduced finger movement and improved ergonomics.
 - **Low-Profile Choc Switches**: Enjoy a unique typing feel with tactile feedback and reduced key travel distance.
 - **Compact Design with Number Pad**: Despite its compact size, the Beamboard incorporates a number pad, providing additional functionality without sacrificing space on your desk.
@@ -27,7 +27,7 @@ The Beamboard offers basic media and Bluetooth configuration layers, with more t
 
 ## Known Issues and Compatibility
 
-No known issues with the Beamboard yet. It's currently compatible only with ZMK firmware and Nice!Nano microcontrollers.
+No known issues with the Beamboard yet. It's currently compatible only with ZMK firmware and the nice!nano microcontroller.
 
 ## Contributions and Feedback
 
