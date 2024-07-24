@@ -87,10 +87,10 @@
 
         mod_layer {
             bindings = <
-                &soft_off   &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans   
+                &soft_off   &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans    &trans      &trans       &trans
-                &trans      &trans      &trans      &kp LPAR    &kp RPAR    &trans      &trans      &kp MINUS   &kp EQUAL   &trans      &trans      &trans      &trans      &trans      &trans    &trans      &trans       &trans   
-                &trans      &trans      &trans      &kp LBKT    &kp RBKT    &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans      &trans          &trans              &trans    &trans      &trans       &trans   
+                &trans      &trans      &trans      &kp LPAR    &kp RPAR    &trans      &trans      &kp MINUS   &kp EQUAL   &trans      &trans      &trans      &trans      &trans      &trans    &trans      &trans       &trans
+                &trans      &trans      &trans      &kp LBKT    &kp RBKT    &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans      &trans          &trans              &trans    &trans      &trans       &trans
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans          &trans                          &trans    &trans      &trans       &trans
                 &trans      &trans      &trans      &trans           &trans                  &trans             &lock_mod   &trans      &trans      &trans      &trans      &trans      &trans    &trans      &trans       &trans
             >;
@@ -100,21 +100,21 @@
         bluetooth_layer {
             bindings = <
                 &trans      &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans
-                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans     &trans    &bt BT_CLR  &out OUT_USB &out OUT_BLE
-                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans     &trans    &trans      &trans       &trans   
-                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans          &trans             &trans    &bt BT_SEL 3 &bt BT_SEL 4 &trans   
-                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans          &trans                         &trans    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2
-                &trans      &trans      &trans      &trans           &trans                  &trans             &trans      &trans      &none       &trans      &trans      &bt BT_PRV &trans    &bt BT_NXT  &trans       &trans
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans     &trans     &bt BT_CLR  &out OUT_USB &out OUT_BLE
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans     &trans     &trans      &trans       &trans
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans          &trans             &trans     &bt BT_SEL 3 &bt BT_SEL 4 &trans
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans          &trans                         &bt BT_NXT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2
+                &trans      &trans      &trans      &trans           &trans                  &trans             &trans      &trans      &none       &trans      &trans      &bt BT_PRV &bt BT_PRV &bt BT_NXT  &trans       &trans
             >;
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         media_layer {
             bindings = <
-                &trans      &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans   
+                &trans      &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans    &trans      &trans       &trans
-                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans    &trans      &trans       &trans   
-                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans          &trans              &trans    &trans      &trans       &trans   
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans    &trans      &trans       &trans
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans          &trans              &trans    &trans      &trans       &trans
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans          &trans                          &trans    &trans      &trans       &trans
                 &trans      &trans      &trans      &lock_media      &trans                  &trans             &trans      &trans      &trans      &trans      &trans      &trans      &trans    &trans      &trans       &trans
             >;
