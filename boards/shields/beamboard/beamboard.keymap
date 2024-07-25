@@ -53,6 +53,15 @@
             bindings = <&kp ENTER>, <&kp PERIOD>;
         };
 
+        ht: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <400>;
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+
         // Used for Ctrl/CAPS button
         tdCtrlCAP: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
@@ -78,7 +87,7 @@
                 &kp ESC     &kp F1      &kp F2      &kp F3      &kp F4            &kp F5      &kp F6      &kp F7      &kp F8            &kp F9      &kp F10     &kp F11     &kp F12
                 &kp GRAVE   &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp MINUS   &kp EQUAL   &kp BSPC    &kp HOME    &kp MINUS   &kp FSLH    &kp ASTRK
                 &kp TAB     &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &kp O       &kp P       &kp LBKT    &kp RBKT    &kp BSLH    &kp END     &kp KP_N7   &kp KP_N8   &kp KP_N9
-                &tdCtrlCAP  &kp A       &kp S       &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp APOS        &kp ENTER           &kp DEL     &kp KP_N4   &kp KP_N5   &kp KP_N6
+             &ht LCTRL CAPS &kp A       &kp S       &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp APOS        &kp ENTER           &kp DEL     &kp KP_N4   &kp KP_N5   &kp KP_N6
                 &kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp PERIOD  &kp SLASH       &kp RSHFT                       &kp UP      &kp KP_N1   &kp KP_N2   &kp KP_N3
                 &kp LCTRL   &kp LGUI    &kp LALT    &sl MEDIA        &kp SPACE               &kp SPACE          &sl MOD     &kp RALT    &kp K_CMENU &mo BLT     &kp RCTRL   &kp LEFT    &kp DOWN    &kp RIGHT   &kp KP_N0   &tdEntPer
             >;
@@ -91,7 +100,7 @@
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans    &trans      &trans       &trans
                 &trans      &trans      &trans      &kp LPAR    &kp RPAR    &trans      &trans      &kp MINUS   &kp EQUAL   &trans      &trans      &trans      &trans      &trans      &trans    &trans      &trans       &trans
                 &trans      &trans      &trans      &kp LBKT    &kp RBKT    &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans      &trans          &trans              &trans    &trans      &trans       &trans
-                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans          &trans                          &trans    &trans      &trans       &trans
+                &trans      &trans      &trans      &kp LBRC    &kp RBRC    &trans      &trans      &trans      &trans      &trans      &trans          &trans                          &trans    &trans      &trans       &trans
                 &trans      &trans      &trans      &trans           &trans                  &trans             &lock_mod   &trans      &trans      &trans      &trans      &trans      &trans    &trans      &trans       &trans
             >;
             sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
