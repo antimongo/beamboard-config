@@ -24,21 +24,13 @@
 
 / {
     macros {
-        lock_media: lock_media {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+        lk_lay: lock_layer {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
             bindings
                 = <&macro_tap &kp K_CANCEL>
-                , <&tog MEDIA>
-                ;
-        };
-
-        lock_mod: lock_mod {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp K_CANCEL>
-                , <&tog MOD>
+                , <&macro_param_1to1>
+                , <&tog MACRO_PLACEHOLDER>
                 ;
         };
     };
@@ -100,7 +92,7 @@
                 &trans      &trans      &trans      &kp LPAR    &kp RPAR    &trans      &trans      &kp UNDER   &kp MINUS   &kp EQUAL   &trans      &trans      &trans      &trans     &trans     &trans      &trans       &trans
                 &trans      &trans      &trans      &kp LBKT    &kp RBKT    &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans      &trans          &trans             &trans     &bt BT_SEL 3 &bt BT_SEL 4 &trans
                 &trans      &trans      &trans      &kp LBRC    &kp RBRC    &trans      &trans      &trans      &trans      &trans      &trans          &trans                         &bt BT_NXT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2
-                &trans      &trans      &trans      &trans           &trans                  &trans             &lock_mod   &trans      &trans      &trans      &trans      &bt BT_PRV &bt BT_PRV &bt BT_NXT  &trans       &trans
+                &trans      &trans      &trans      &trans           &trans                  &trans             &lk_lay MOD &trans      &trans      &trans      &trans      &bt BT_PRV &bt BT_PRV &bt BT_NXT  &trans       &trans
             >;
             sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
         };
@@ -112,7 +104,7 @@
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans    &trans      &trans       &trans
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans          &trans              &trans    &trans      &trans       &trans
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans          &trans                          &trans    &trans      &trans       &trans
-                &trans      &trans      &trans      &lock_media      &trans                  &trans             &trans      &trans      &trans      &trans      &trans      &trans      &trans    &trans      &trans       &trans
+                &trans      &trans      &trans      &lk_lay MEDIA    &trans                  &trans             &trans      &trans      &trans      &trans      &trans      &trans      &trans    &trans      &trans       &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
