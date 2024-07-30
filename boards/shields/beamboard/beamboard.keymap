@@ -48,7 +48,7 @@
             bindings
                 = <&macro_tap &kp K_CANCEL>
                 , <&macro_param_1to1>
-                , <tog MACRO_PLACEHOLDER>
+                , <&tog MACRO_PLACEHOLDER>
                 ;
         };
     };
