@@ -5,5 +5,4 @@ type: shield
 requires: [nice_nano_v2]
 features:
   - keys
-  - display
   - encoder
