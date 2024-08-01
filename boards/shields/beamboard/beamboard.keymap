@@ -24,24 +24,6 @@
 
 / {
     macros {
-        lock_media: lock_media {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp K_CANCEL>
-                , <&tog MEDIA>
-                ;
-        };
-
-        lock_mod: lock_mod {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp K_CANCEL>
-                , <&tog MOD>
-                ;
-        };
-
         lk_lay: lock_layer {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -69,22 +51,6 @@
             tapping-term-ms = <400>;
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
-        };
-
-        // Used for Ctrl/CAPS button
-        tdCtrlCAP: tap_dance_1 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <400>;
-            bindings = <&kp LCTRL>, <&kp CAPS>;
-        };
-
-        // Used for Media Layer
-        tdMedia: tap_dance_2 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo MEDIA>, <&tog MEDIA>;
         };
     };
 
