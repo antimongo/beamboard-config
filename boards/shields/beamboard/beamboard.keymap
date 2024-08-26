@@ -52,14 +52,6 @@
     };
 
     behaviors {
-        // Used for numpad enter/decimal (currently unused)
-        tdEntPer: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp ENTER>, <&kp PERIOD>;
-        };
-
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -67,22 +59,6 @@
             tapping-term-ms = <400>;
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
-        };
-
-        // Used for Ctrl/CAPS button
-        tdCtrlCAP: tap_dance_1 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <400>;
-            bindings = <&kp LCTRL>, <&kp CAPS>;
-        };
-
-        // Used for Media Layer
-        tdMedia: tap_dance_2 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo MEDIA>, <&tog MEDIA>;
         };
     };
 
@@ -103,8 +79,8 @@
 
         mod_layer {
             bindings = <
-                &soft_off   &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans
-                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans     &trans     &bt BT_CLR  &out OUT_USB &out OUT_BLE
+                &trans      &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans     &soft_off  &bt BT_CLR  &out OUT_USB &out OUT_BLE
                 &trans      &trans      &trans      &kp LPAR    &kp RPAR    &trans      &trans      &kp UNDER   &kp MINUS   &kp EQUAL   &trans      &trans      &trans      &trans     &trans     &trans      &trans       &trans
                 &trans      &trans      &trans      &kp LBKT    &kp RBKT    &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans      &trans          &trans             &trans     &bt BT_SEL 3 &bt BT_SEL 4 &trans
                 &trans      &trans      &trans      &kp LBRC    &kp RBRC    &trans      &trans      &trans      &trans      &trans      &trans          &trans                         &bt BT_NXT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2
@@ -136,6 +112,5 @@
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
-
     };
 };
