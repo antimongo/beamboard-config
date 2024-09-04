@@ -16,7 +16,7 @@
 #define CODE 3
 
 &sl {
-    release-after-ms = <333>; // After key release, hold for 333ms
+    release-after-ms = <250>; // After key release, hold for 250ms
 };
 
 &soft_off {
