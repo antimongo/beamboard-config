@@ -16,7 +16,7 @@
 #define CODE 3
 
 &sl {
-    release-after-ms = <333>; // After key release, hold for 333ms
+    release-after-ms = <250>; // After key release, hold for 250ms
 };
 
 &soft_off {
@@ -49,6 +49,13 @@
                 key-positions = <29 30>;
                 bindings = <&kp FSLH>;
             };
+
+            // Enables mod layer even with VCC-off
+            cmb_layr {
+                timeout-ms = <50>;
+                key-positions = <27 45>;
+                bindings = <&tog MOD>;
+            };
     };
 
     behaviors {
@@ -78,12 +85,12 @@
 
         mod_layer {
             bindings = <
-                &trans      &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans
-                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans     &soft_off  &bt BT_CLR  &out OUT_USB &out OUT_BLE
-                &trans      &trans      &trans      &kp LPAR    &kp RPAR    &trans      &trans      &kp UNDER   &kp MINUS   &kp EQUAL   &trans      &trans      &trans      &trans     &trans     &trans      &trans       &trans
-                &trans      &trans      &trans      &kp LBKT    &kp RBKT    &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans      &trans          &trans             &trans     &bt BT_SEL 3 &bt BT_SEL 4 &trans
-                &trans      &trans      &trans      &kp LBRC    &kp RBRC    &trans      &trans      &trans      &trans      &trans      &trans          &trans                         &bt BT_NXT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2
-                &trans      &trans      &trans      &trans           &trans                  &trans             &lk_lay MOD &trans      &trans      &trans      &trans      &bt BT_PRV &bt BT_PRV &bt BT_NXT  &trans       &trans
+                &trans      &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans            &trans      &trans &ext_power EP_TOG &soft_off
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp PG_UP  &bt BT_CLR   &out OUT_USB &out OUT_BLE
+                &trans      &trans      &trans      &kp LPAR    &kp RPAR    &trans      &trans      &kp UNDER   &kp MINUS   &kp EQUAL   &trans      &trans      &trans      &trans      &kp PG_DN  &trans       &trans       &trans
+                &trans      &trans      &trans      &kp LBKT    &kp RBKT    &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans      &trans          &trans              &trans     &bt BT_SEL 3 &bt BT_SEL 4 &trans
+                &trans      &trans      &trans      &kp LBRC    &kp RBRC    &trans      &trans      &trans      &trans      &trans      &trans          &trans                          &bt BT_NXT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2
+                &trans      &trans      &trans      &trans           &trans                  &trans             &lk_lay MOD &trans      &trans      &trans      &trans      &bt BT_PRV  &bt BT_PRV &bt BT_NXT   &trans       &trans
             >;
             sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
         };

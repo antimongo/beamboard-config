@@ -103,11 +103,11 @@
             , <&sft_io    3 GPIO_ACTIVE_HIGH> // 1
             , <&sft_io    4 GPIO_ACTIVE_HIGH> // 2
             , <&sft_io    5 GPIO_ACTIVE_HIGH> // 3
-            , <&sft_io    6 GPIO_ACTIVE_HIGH> // 4 P1.07/gpio1
+            , <&sft_io    6 GPIO_ACTIVE_HIGH> // 4
             , <&pro_micro 2 GPIO_ACTIVE_HIGH> // 5
-            , <&pro_micro 3 GPIO_ACTIVE_HIGH> // 6 MCP P5
-            , <&pro_micro 4 GPIO_ACTIVE_HIGH> // 7 MCP P2
-            , <&sft_io    1 GPIO_ACTIVE_HIGH> // 8 MCP P1
+            , <&pro_micro 3 GPIO_ACTIVE_HIGH> // 6
+            , <&pro_micro 4 GPIO_ACTIVE_HIGH> // 7
+            , <&sft_io    1 GPIO_ACTIVE_HIGH> // 8
             ;
 
         row-gpios                                                 // row #
@@ -117,7 +117,7 @@
             , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // 3
             , <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // 4
             , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // 5
-            , <&pro_micro  5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // 6 MCP P0
+            , <&pro_micro  5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // 6
             , <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // 7
             , <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // 8
             , <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // 9
