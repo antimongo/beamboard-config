@@ -15,6 +15,16 @@ config PINCTRL
 config ZMK_EXT_POWER
     default y
 
+if ZMK_BACKLIGHT
+
+config PWM
+    default y
+
+config LED_PWM
+    default y
+
+endif # ZMK_BACKLIGHT
+
 config ZMK_DISPLAY
     select LV_FONT_MONTSERRAT_28
 
@@ -25,4 +35,4 @@ config LS0XX
 
 endif # ZMK_DISPLAY
 
-endif
+endif # SHIELD_BEAMBOARD
