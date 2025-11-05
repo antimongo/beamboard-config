@@ -97,7 +97,7 @@
 
         mod_layer {
             bindings = <
-                &trans      &trans      &trans      &trans      &trans            &trans      &trans      &trans      &trans            &trans      &trans &ext_power EP_TOG &soft_off
+                &trans      &kp LNLCK   &kp LSLCK   &trans      &trans            &trans      &trans      &trans      &trans            &trans      &trans &ext_power EP_TOG &soft_off
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &bl BL_DEC  &bl BL_INC  &bl BL_TOG  &kp PG_UP  &bt BT_CLR   &out OUT_USB &out OUT_BLE
                 &trans      &trans      &trans      &kp LPAR    &kp RPAR    &trans      &trans      &kp UNDER   &kp MINUS   &kp EQUAL   &trans      &trans      &trans      &trans      &kp PG_DN  &trans       &trans       &trans
                 &kp KP_NUM  &trans      &trans      &kp LBKT    &kp RBKT    &trans      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans      &trans          &trans              &trans     &bt BT_SEL 3 &bt BT_SEL 4 &trans
